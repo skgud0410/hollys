@@ -1,0 +1,11 @@
+@charset 'utf-8';
+
+#menu .container{padding: 50px 0; display: grid; grid-template-columns: 1fr 3fr; column-gap: 40px;}
+#menu h2{display: none;}
+#menu .local-nav h3{display:none;}
+#menu .local-nav ul{margin-bottom: 40px; font-weight: 700; font-size: 1.5em;}
+#menu .local-nav li.active,#menu .local-nav li:hover{color: #d91226;}
+#menu .local-nav h4{font-weight: 600; font-size: 1em;}
+#menu .local-nav h4+p{margin-bottom: 40px; font-weight: 300; font-size: 0.9em; line-height: 1;}
+#menu .local-nav .img-box{border-bottom: 1px solid var(--text04); padding-bottom: 20px;}
+#menu .local-contents h4{font-weight: 700; font-size: 2.6em;}

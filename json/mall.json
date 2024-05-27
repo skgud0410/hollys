@@ -1,0 +1,17 @@
+[
+    {
+        "title":"할리스콘",
+        "text":"소중한 사람에게 모바일 쿠폰을 선물하세요",
+        "src":"./images/img-con-mall01.png"
+    },
+    {
+        "title":"할리스카드",
+        "text":"소중한 사람에게 선불카드를 선물하세요",
+        "src":"./images/img-con-mall02.png"
+    },
+    {
+        "title":"구매내역",
+        "text":"최근 3개월 구매내역을 확인할 수 있습니다.",
+        "src":"./images/img-con-mall03.png"
+    }
+]
