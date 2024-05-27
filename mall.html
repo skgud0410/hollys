@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+    <a href="./index.html">시작페이지</a>
+    <nav class="local-nav">
+        <ul>
+            <li><a href="#">할리스콘</a></li>
+            <li><a href="#">할리스카드</a></li>
+            <li><a href="#">구매내역</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <h2>제목</h2>
+    <p>내용</p>
+    <div class="img-box"><img src="./images/img-con-mall01.png" alt="mall"></div>
+    <script>
+        $('.local-nav li').click(function(){
+            let loadIdx = $(this).index();
+            $.ajax({
+                type:'get',
+                url:'./mall.json',
+                dataType:'json',
+                success:function(result){
+                    $('h2').text(result[loadIdx].title);
+                },
+                error:function(){
+                    alert('자료 가져오기 실패');
+                }
+            })
+        })
+    </script>
+</body>
+</html>
